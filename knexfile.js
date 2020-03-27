@@ -18,8 +18,9 @@ module.exports = {
 		}
 	},
 	development: {
-		client: 'postgresql',
+		client: 'pg',
 		connection: {
+			host: 'localhost',
 			database: database_name,
 			user: database_user,
 			password: database_password
