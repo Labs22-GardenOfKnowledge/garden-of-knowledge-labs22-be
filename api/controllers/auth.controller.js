@@ -8,7 +8,7 @@ const registerStudent = catchAsync(async (req, res) => {
   const hashedPassword = bcrypt.hashSync(
     req.body.user.password,
     10
-  );
+  );  
 
   req.body.user = {
     ...req.body.user,
