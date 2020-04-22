@@ -154,8 +154,8 @@ exports.up = function(knex) {
 			table
 				.integer('family_id')
 				.unsigned()
-				.references('id')
-				.inTable('family')
+				.references('user_id')
+				.inTable('user')
 				.onDelete('CASCADE')
 				.onUpdate('CASCADE')
 				.index();
