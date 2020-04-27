@@ -11,6 +11,11 @@ services:
             - "4000:4000"
         networks:
             - nodeapp-network
+        environment:
+            DB_ENV: development
+            DB_NAME: speakout_db
+            DB_USER: postgres
+            DB_PASSWORD: postgres
     
     postgres:
         image: postgres
